@@ -1,0 +1,25 @@
+.footer{
+    margin: auto;
+    max-width: 80%;
+  }
+  .email{
+      margin-top: 120px;
+    }
+    .email input{
+      background-color: transparent;
+      background-color: rgba(128, 128, 128, 0.253);
+      
+      border: none;
+      border: 1px solid rgb(100, 98, 98);
+      padding: 10px;
+    }
+    .orangeColor{
+      color: orangered;
+    }
+    footer{
+      margin-top: 120px;
+      color: white !important;
+    }
+    footer>div p{
+      color: rgb(173, 172, 172) !important;
+    }

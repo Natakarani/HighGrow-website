@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+.logo-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.925)), url('https://img.freepik.com/premium-photo/smiling-woman-student-teacher-business-lady-holding-books-isolated-with-white-highlights_660230-201486.jpg?ga=GA1.1.132014876.1707307712&semt=ais_hybrid') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+}
+
+.logo-banner > div {
+    position: absolute;
+    padding: 120px;
+}
+
+.logo-banner > div i {
+    font-size: 10px;
+}
+.logo-banner button{
+    background-color: rgba(128, 128, 128, 0.201) !important;
+}
+.darkBtn {
+    background: orangered;
+}
+
+.orangeFont {
+    color: orangered;
+}
+
+.grayText {
+    color: rgb(199, 198, 198);
+}
+
+.about-card {
+    margin-top: 120px;
+}
+
+.about-card > div {
+    width: 100%;
+}
+
+.about-card > div img {
+    width: 100%;
+    border-radius: 10px; /* Optional: add some border-radius for a nicer look */
+}
+
+.logo-banner h1 {
+    font-weight: 500;
+}
+
+.about {
+    max-width: 80%;
+    margin: auto !important;
+}
+
+.mission {
+    margin-top: 140px;
+    background: rgba(128, 128, 128, 0.203);
+}
+.mission:hover{
+    border: 1px solid orangered;
+}
+.impact {
+    margin-top: 120px;
+}
+
+.coreValues {
+    margin-top: 180px;
+}
+
+.coreValues-card > div {
+    padding: 14px;
+    max-width: 365px;
+    background: rgba(128, 128, 128, 0.05);
+}
+
+/* Next Step Section */
+.nextStep {
+    margin-top: 120px;
+}
+
+@media (max-width:1200px){
+    .about-card>div{
+        flex-direction: column !important;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .logo-banner > div {
+        padding: 60px;
+    }
+
+    .logo-banner h1 {
+        font-size: 2.5rem; /* Adjust for smaller screens */
+    }
+
+    .logo-banner p {
+        font-size: 1rem;
+    }
+
+    .about-card > div {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content */
+    }
+
+    .impact h1, .coreValues h1 {
+        font-size: 1.5rem; /* Adjust impact heading */
+    }
+
+    .coreValues-card > div {
+        max-width: 100%; /* Allow cards to take full width */
+        margin: 10px 0; /* Add margin between cards */
+    }
+   
+}
+
+@media (max-width: 480px) {
+    .logo-banner h1 {
+        font-size: 2rem; /* Further reduce heading size */
+    }
+
+    .logo-banner p {
+        font-size: 0.9rem;
+    }
+
+    .impact, .coreValues {
+        margin-top: 80px; /* Reduce margin for smaller screens */
+    }
+
+    .coreValues-card > div {
+        padding: 10px;
+    }
+}

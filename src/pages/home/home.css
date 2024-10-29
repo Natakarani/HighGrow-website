@@ -1,0 +1,59 @@
+.home-hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.889)) ,url('https://img.freepik.com/free-photo/group-friends-making-plans-together-home_23-2148431529.jpg?t=st=1730205224~exp=1730208824~hmac=24f4eabd426374483c40dade5a6e14256d867a9b453ff74ddd4eb6384d321a95&w=996') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 67vh;
+    position: relative;
+}
+.home-hero>div{
+    position: absolute;
+    padding: 120px;
+}
+.home-margin{
+    margin: 120px;
+}
+
+.grayClr{
+    color: rgb(152, 150, 150);
+}
+.orangeTxt{
+    background: orangered !important;
+}
+.services{
+    margin-top: 160px;
+}
+.services>div>div{
+    background: rgba(153, 146, 146, 0.103);
+    border: 1px solid rgba(128, 128, 128, 0.255);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 385px;
+}
+.services>div>div:hover{
+    border: 1px solid orangered;
+}
+.services>div>div i{
+    color: orangered;
+}
+.impact{
+    margin-top: 160px;
+}
+.impact>div>div{
+    min-width: 280px;
+    background: rgba(128, 128, 128, 0.242);
+    padding: 18px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 5px solid orangered;
+}
+
+  
+  @media (max-width:1200px){
+    .home-margin>div{
+        flex-direction: column !important;
+    }
+  }

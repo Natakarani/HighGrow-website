@@ -1,0 +1,66 @@
+.active{
+    color: orangered;
+}
+.services-intro{
+    max-width: 80%;
+    margin: auto;
+}
+.services-intro>div{
+    margin: 120px 0 !important;
+    
+}
+.grayText{
+    color: rgb(171, 169, 169);
+}
+.technology{
+    line-height: 2;
+}
+.consult{
+    margin-top: 180px !important;
+}
+.consult>div>div i{
+    color: orangered;
+    font-size: 30px;
+    background: rgba(100, 99, 99, 0.362);
+    padding: 10px 12px !important;;
+    border-radius: 50%;
+}
+.consult>div>div{
+    padding: 20px !important;
+    max-width: 375px !important;
+    background: rgba(115, 118, 115, 0.297);
+    border-radius: 10px !important;
+}
+.consult>div>div:hover{
+   border: 1px solid orangered;
+}
+.consult>div>div:hover i{
+    color: orangered;
+}
+.impact{
+    margin-top: 180px;
+}
+.impact>div>div{
+    background: rgba(212, 204, 204, 0.12) !important;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 250px;
+}
+.impact>div>div:hover{
+    border: 1px solid orangered;
+}
+.impact>div>div i{
+    color: orangered;
+}
+.ready{
+    margin-top: 180px;
+}
+.ready button{
+    background: orangered;
+
+}
+@media (max-width:768px){
+    .services-banner{
+        min-height: 40vh;
+    }
+}

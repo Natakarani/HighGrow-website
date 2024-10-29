@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black !important;
+  }
+
+
+/* Dropdown content */
+.dropdown-content {
+    background-color: black;
+    display: none; 
+    position: absolute; 
+    z-index: 1; 
+    left: 0; /* Align it to the left of the navLinks */
+    top: 40px; /* Add some space between the navLinks and dropdown */
+    min-width: 500px !important;
+}
+
+/* Show dropdown on hover */
+.navLinks:hover .dropdown-content {
+    display: block; 
+}
+
+/* Sub-menu styles */
+.sub-menu {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Ensure paragraphs and small texts align left */
+.sub-menu p,
+.sub-menu small {
+    text-align: left; /* Align text to the left */
+    margin: 0; /* Remove default margin */
+}
+
+/* Font size for dropdown items */
+.sub-menu p {
+    font-size: 15px !important;
+}
+
+/* Optional styles for dropdown items */
+.dropdown-content div {
+    padding: 10px; /* Padding inside dropdown items */
+}
+
+/* About Us specific styles */
+
+.career-banner{
+   
+    background: linear-gradient(rgba(186, 181, 181, 0.53),rgba(41, 39, 39, 0.571)) , url('https://img.freepik.com/free-photo/dissapointed-young-handsome-man-gesturing-shouting_176420-1254.jpg?ga=GA1.1.287837636.1663933397&semt=ais_hybrid') no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    min-height: 70vh;
+   padding-top: 140px;
+  }
+  .career-banner div{
+    padding: 80px;
+    max-width: 60%;
+    line-height: 2;
+  }
+  .career-banner div h2{
+    font-weight: 600;
+  }
+ 
+  .hero-page {
+    max-width: 80%;
+    margin: auto;
+  }
+  .hero-cards>div{
+    background-color: rgba(128, 128, 128, 0.256);
+    border: 1px solid rgb(65, 64, 64);
+  }
+  .hero-cards>div:hover{
+    border: 1px solid orangered;
+  }
+  .hero-cards>div{
+    max-width: 380px !important;
+  }
+  .hero-cards>div:hover i{
+    color: orangered;
+  }
+ .grayText{
+    color: rgb(188, 185, 185);
+ }
+ .accordation-margin{
+    color: white !important;
+    margin-top: 150px !important;
+ }
+ .accordion{
+    color:white !important;
+
+ }
+ .accordion-item{
+    background: transparent !important;
+ }
+ /* custom-styles.css */
+.accordion-button {
+    box-shadow: none; /* Remove box shadow from the button */
+  }
+  
+  .accordion-item {
+    box-shadow: none; /* Remove box shadow from the accordion item */
+  }
+  .darkBtn{
+    background-color: orangered !important;
+  }
+  /* custom-styles.css */
+.accordion-item {
+    border: none; /* Remove border from accordion items */
+  }
+  
+  .accordion-button {
+    border: none; /* Remove border from accordion buttons */
+  }
+  
+  .accordion-header {
+    border: none; /* Remove border from accordion header */
+  }
+  
+  .accordion-body {
+    border: none; /* Optional: remove border from accordion body */
+  }
+  
+  .nextStep{
+    margin-top: 120px;
+  }
+  
+  @media (max-width:1200px){
+    .careerMeet{
+        flex-direction: column;
+    }
+  }

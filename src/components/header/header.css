@@ -1,0 +1,66 @@
+/* header.css */
+header {
+    
+    background-color: #1e1d1d; /* Example background color */
+}
+
+.navbar-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: max-height 0.3s ease-in-out; /* Smooth transition */
+}
+header img{
+    width: 34%;
+}
+.navbar-menu.show {
+    max-height: 400px; /* Set a max height for dropdown */
+}
+
+.burger-icon {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+}
+.dropdown-content>div{
+    position: absolute;
+    left: 0;
+    right: 0 !important;
+    background-color: black;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none; /* Hide by default on mobile */
+        flex-direction: column;
+        position: absolute;
+        background-color: #333; /* Same as header */
+        top: 60px; /* Position below header */
+        left: 0;
+        right: 0px !important;
+        max-height: 0; /* Collapse by default */
+        /* overflow: hidden;  */
+    }
+
+    .navbar-menu.show {
+        display: flex; /* Show when active */
+        max-height: 400px; /* Adjust as necessary */
+    }
+
+    .burger-icon {
+        display: block; /* Show on mobile */
+    }
+
+    .navLinks {
+        width: 100%; /* Full width for mobile links */
+        padding: 10px 0; /* Adjust padding */
+        border-bottom: 1px solid #444; /* Divider for mobile links */
+    }
+
+    /* Dropdown content styles */
+    .dropdown-content {
+        display: block; /* Ensure it's block when toggled */
+        width: 100%; /* Full width */
+        position: relative; /* To overlay above content */
+        background-color: #333; /* Match header background */
+    }
+}

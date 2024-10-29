@@ -1,0 +1,96 @@
+.services-banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.548),rgba(0, 0, 0, 0.825)), url('https://img.freepik.com/free-photo/overhead-view-businesswoman-working-computer-office-place-your-text-ideal-blog-flat-lay-white-background_639032-1349.jpg?ga=GA1.1.132014876.1707307712&semt=ais_hybrid') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 60vh;
+    object-fit: cover;
+    position: relative;
+    padding: 80px;
+}
+.services-banner>div{
+    position: absolute;
+    
+    top: 120px !important;
+}
+.active{
+    color: orangered;
+}
+.services-banner i{
+    font-size: 10px;
+}
+.services-banner button{
+    border: none !important;
+    outline: none !important;
+    background: rgba(128, 128, 128, 0.3) !important;
+}
+.services-margin{
+    max-width: 80%;
+    margin: auto;
+}
+.services-margin>div{
+    margin-top: 120px !important;
+}
+.grayText{
+    color: rgb(176, 174, 174);
+}
+.orangeText{
+    background: orangered !important;
+}
+.services-cards>div:hover{
+   border:1px solid orangered;
+}
+.services-cards>div i{
+    color: orangered;
+}
+.services-cards>div{
+    background: rgba(210, 205, 205, 0.155) !important;
+   
+}
+.emerging{
+    margin-top: 120px !important;
+}
+.services-card1>div{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.288) !important;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 150px !important;
+    min-width: 150px !important;
+}
+.services-cards>div .icon{
+    background: rgba(18, 17, 17, 0.381) !important;
+    padding: 6px 15px !important;
+    border-radius: 50% !important;
+}
+.services-cards>div p, .services-cards>div small{
+    color: rgb(164, 161, 161);
+}
+.services-cards>div h2{
+    color: orangered;
+}
+.emerging>div>div{
+    display: flex;
+   border-radius: 15px;
+    align-items: center;
+    gap: 10px !important;
+    min-width: 300px;
+    padding: 10px;
+}
+.emerging>div>div:hover{
+    background-color: rgba(52, 51, 51, 0.518) !important;
+}
+.emerging>div>div i{
+    padding: 20px !important;
+    color: orangered;
+    border-radius: 50%;
+    background-color: rgba(166, 160, 160, 0.179) !important;
+}
+.emerging>div>div p{
+    margin: 0 !important;
+}
+@media (max-width:768px){
+    .services-banner{
+        min-height: 40vh;
+    }
+}

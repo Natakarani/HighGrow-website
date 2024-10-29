@@ -1,0 +1,130 @@
+/* Basic header layout */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.858);
+    padding: 1rem;
+}
+.techno-banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.548),rgba(0, 0, 0, 0.825)), url('https://img.freepik.com/free-photo/experienced-professional-testing-two-interns_1262-14919.jpg?t=st=1730218481~exp=1730222081~hmac=02cf0c66f25de8cf6196d5af278e3c9b33a57b7d4b7e2d0ff57693f83f8b46cc&w=996') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 60vh;
+    object-fit: cover;
+    position: relative;
+    padding: 120px;
+}
+.techno-banner button{
+    background: rgba(139, 136, 136, 0.306);
+}
+/* Logo */
+.logo {
+    margin-right: auto;
+}
+
+/* Navbar Links */
+.navbar-menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Button styling */
+header small {
+    color: white;
+}
+
+header .darkbtn {
+    background-color: orangered;
+}
+
+header .darkbtn:hover {
+    opacity: 0.8;
+    background-color: orangered !important;
+}
+
+/* Arrow styling */
+header .fa-angle-down {
+    font-size: 10px !important;
+}
+
+/* Link styling */
+header .navLinks {
+    position: relative;
+    background-color: black;
+}
+
+header .navLinks:hover {
+    cursor: pointer;
+    background: rgba(197, 194, 194, 0.158) !important;
+}
+
+header .navLinks:hover .fa-angle-down {
+    transform: rotate(180deg);
+    transition: 0.6s;
+}
+
+/* Dropdown styling */
+#aboutUs {
+    background: rgba(148, 147, 147, 0.215) !important;
+}
+
+/* General link styling */
+header .links {
+    margin-top: -18px !important;
+}
+
+header .links i {
+    margin-left: -10px !important;
+}
+
+/* Burger icon styling */
+.burger-icon {
+    display: none; /* Hidden on desktop */
+    cursor: pointer;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    /* Header layout for mobile */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+    }
+
+    /* Navbar on mobile */
+    .navbar-menu {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        padding: 20px;
+        align-items: center;
+        z-index: 100;
+    }
+
+    /* Show navbar when burger icon is clicked */
+    .navbar-menu.show {
+        display: flex;
+    }
+
+    /* Display burger icon on mobile */
+    .burger-icon {
+        display: block;
+        margin-left: 10px; /* Space between logo and burger */
+    }
+
+    /* Centering the button */
+    .darkbtn {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
